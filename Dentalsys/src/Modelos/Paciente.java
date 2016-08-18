@@ -11,4 +11,6 @@ package Modelos;
  */
 public class Paciente {
     
+    private String cedula;
+    
 }
