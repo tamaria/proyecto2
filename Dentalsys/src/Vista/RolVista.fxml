@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="194.00009999999747" prefWidth="454.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ControladorVista.RolVistaControlador">
+  <children>
+    <TextField fx:id="txtDescripcion" layoutX="52.0" layoutY="93.0" prefWidth="351.0" promptText="Descripción" />
+    <Button id="btnGrabar" fx:id="btnGuardar" layoutX="187.0" layoutY="153.0" mnemonicParsing="false" onAction="#btnGuardarAction" prefHeight="25.0" prefWidth="80.0" text="Guardar" />
+    <Label alignment="CENTER" layoutX="127.0" layoutY="32.0" prefWidth="200.0" text="Roles">
+      <font>
+        <Font name="Century Gothic" size="35.0" />
+      </font>
+    </Label>
+    <Label fx:id="lblMensaje" layoutX="84.0" layoutY="126.0" prefWidth="200.0" text="" textFill="#00993d" />
+    <Button id="btnGrabar" fx:id="btnCancelar" cancelButton="true" layoutX="272.0" layoutY="153.0" mnemonicParsing="false" onAction="#btnCancelarAction" prefHeight="25.0" prefWidth="80.0" text="Cancelar" />
+    <Button fx:id="btnNuevo" defaultButton="true" layoutX="15.0" layoutY="153.0" mnemonicParsing="false" onAction="#btnNuevoAction" prefHeight="25.0" prefWidth="80.0" text="Nuevo" />
+    <Button id="txtModificar" fx:id="btnModificar" layoutX="101.0" layoutY="153.0" mnemonicParsing="false" onAction="#btnModificarAction" prefHeight="25.0" prefWidth="80.0" text="Modificar" />
+    <Button fx:id="btnEliminar" layoutX="360.0" layoutY="153.0" mnemonicParsing="false" onAction="#btnEliminarAction" prefHeight="25.0" prefWidth="80.0" text="Eliminar" />
+  </children>
+</AnchorPane>

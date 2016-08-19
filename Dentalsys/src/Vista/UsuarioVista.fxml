@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="446.0" prefWidth="510.0000999999975" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ControladorVista.UsuarioVistaControlador">
+  <children>
+    <Label alignment="CENTER" layoutX="14.0" layoutY="24.0" prefWidth="482.0001220703125" text="Usuarios">
+      <font>
+        <Font name="Century Gothic" size="35.0" />
+      </font>
+    </Label>
+    <TextField fx:id="txtCodigo" disable="false" layoutX="76.0" layoutY="93.0" onAction="#txtCodigoAction" onKeyTyped="#txtCodigoKeyTyped" prefWidth="84.0" promptText="Código" text="" />
+    <TextField fx:id="txtUsuario" disable="false" layoutX="76.0" layoutY="125.0" prefWidth="200.0" promptText="Usuario" />
+    <PasswordField fx:id="txtPassword" disable="false" layoutX="76.0" layoutY="158.0" prefWidth="200.0" promptText="Contraseña" />
+    <PasswordField fx:id="txtConfirmarPassword" disable="false" layoutX="76.0" layoutY="190.0" onKeyReleased="#txtConfirmarPasswordKeyReleased" prefWidth="200.0" promptText="Repetir Contraseña" />
+    <ComboBox fx:id="cboxRol" disable="false" layoutX="76.0" layoutY="223.0" prefHeight="21.0" prefWidth="200.0" promptText="Rol">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ToggleButton fx:id="tbtnActivo" disable="false" layoutX="292.0" layoutY="223.0" mnemonicParsing="false" text="Activo" />
+    <TextField fx:id="txtCedula" disable="false" layoutX="76.0" layoutY="270.0" onKeyTyped="#txtCedulaKeyTyped" prefWidth="200.0" promptText="Cédula" />
+    <TextField fx:id="txtNombre" disable="false" layoutX="76.0" layoutY="304.0" prefWidth="358.0" promptText="Nombres" />
+    <TextField fx:id="txtApellido" disable="false" layoutX="76.0" layoutY="336.0" prefWidth="358.0" promptText="Apellido" />
+    <TextField fx:id="txtEmail" disable="false" layoutX="76.0" layoutY="365.0" prefWidth="358.0" promptText="Email" />
+    <Button id="btnGrabar" fx:id="btnGuardar" disable="false" layoutX="296.0" layoutY="407.0" mnemonicParsing="false" onAction="#btnGuardarAction" prefHeight="25.0" prefWidth="80.0" text="Guardar" />
+    <Button id="btnGrabar" fx:id="btnCancelar" cancelButton="true" disable="false" layoutX="382.0" layoutY="407.0" mnemonicParsing="false" onAction="#btnCancelarAction" prefHeight="25.0" prefWidth="80.0" text="Cancelar" />
+    <Button fx:id="btnNuevo" defaultButton="true" layoutX="38.0" layoutY="407.0" mnemonicParsing="false" onAction="#btnNuevoAction" prefHeight="25.0" prefWidth="80.0" text="Nuevo" />
+    <Button id="txtModificar" fx:id="btnModificar" layoutX="124.0" layoutY="407.0" mnemonicParsing="false" onAction="#btnModificarAction" prefHeight="25.0" prefWidth="80.0" text="Modificar" />
+    <Button fx:id="btnEliminar" layoutX="210.0" layoutY="407.0" mnemonicParsing="false" onAction="#btnEliminarAction" prefHeight="25.0" prefWidth="80.0" text="Eliminar" />
+    <Label fx:id="lblConfirmarPassword" layoutX="290.0" layoutY="196.0" prefWidth="144.0" text="" />
+  </children>
+</AnchorPane>

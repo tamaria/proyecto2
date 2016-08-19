@@ -1,10 +1,10 @@
-package Modelos;
+package Modelo;
 
 /**
  *
  * @author Tanya Aquino - Emilce Fernández
  */
-public class TipoEspecialidad {
+public class TipoArticulo {
     
     private int codigo;
     private String descripcion;
@@ -24,6 +24,5 @@ public class TipoEspecialidad {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
-    
     
 }

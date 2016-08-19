@@ -1,14 +1,18 @@
-package Modelos;
+package Modelo;
 
 /**
  *
- * @author Tanya Aquino - Emilce Fernández
+ * @author Emilce Fernandez - Tanya Aquino
  */
-public class TipoContacto {
+public class RolModelo {
     
     private int codigo;
     private String descripcion;
 
+    public RolModelo(String descripcion) {
+        this.descripcion = descripcion;
+    }
+    
     public int getCodigo() {
         return codigo;
     }

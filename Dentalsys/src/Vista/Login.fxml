@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="280.0" prefWidth="339.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Controlador.LoginControlador">
+  <children>
+    <Pane layoutX="0.0" layoutY="0.0" prefHeight="280.0" prefWidth="339.0">
+      <children>
+        <Label fx:id="lblMensaje" layoutX="68.0" layoutY="187.0" prefWidth="200.0" text="" textFill="RED" />
+      </children>
+    </Pane>
+    <TextField fx:id="txtUsuario" layoutX="70.0" layoutY="115.0" prefWidth="200.0" promptText="Usuario" />
+    <PasswordField fx:id="txtPassword" layoutX="70.0" layoutY="159.0" prefWidth="200.0" promptText="Contraseña" />
+    <Button fx:id="btnLogin" defaultButton="true" layoutX="125.0" layoutY="214.0" mnemonicParsing="false" onAction="#btnLoginAction" text="Iniciar Sesión" />
+    <Label layoutX="88.0" layoutY="50.0" text="DentalSys" textFill="#33b6ff">
+      <font>
+        <Font name="Century Gothic" size="35.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>

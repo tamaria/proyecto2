@@ -1,20 +1,20 @@
-package Modelos;
+package Modelo;
 
 /**
  *
  * @author Tanya Aquino - Emilce Fernández
  */
-public class Rol {
+public class TipoContacto {
     
-    private int codigo_rol;
+    private int codigo;
     private String descripcion;
 
-    public int getCodigo_rol() {
-        return codigo_rol;
+    public int getCodigo() {
+        return codigo;
     }
 
-    public void setCodigo_rol(int codigo_rol) {
-        this.codigo_rol = codigo_rol;
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
     }
 
     public String getDescripcion() {
